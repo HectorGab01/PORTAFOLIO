@@ -1,0 +1,103 @@
+﻿@model Persona
+
+
+@{
+    ViewData["Title"] = "MI PAGINA";
+
+    DateTime hoy = DateTime.Now;
+}
+
+<div class="text-center">
+    <h4>@hoy.ToString("dd/MM/yyyy hh:mm:ss tt")</h4>
+    <h1 class="display-4">Soy @Model.Nombre de @Model.Edad años</h1>
+    <h2>Soy estudiante del TecNM en la carrera de TIC´s.</h2>
+
+    <img 
+     id="foto"
+     src="~/imagenes/yo.jpeg" alt="Foto de Hector Gabriel" />
+</div>
+
+<div class="text-center">
+    <img id="imagen-net" src="~/imagenes/net.jpg" alt="dotnet" />
+</div>
+
+<div class="row justify-content-center text-center bg-primary">
+    <div class="col col-md-7 seccion-bienvenida">
+
+        <h1>Bienvenido a mi portafolio</h1>
+        <p>
+            Héctor Gabriel es un talentoso programador con una gran pasión por la tecnología 
+            y el desarrollo de soluciones innovadoras. Con una sólida comprensión de diversos 
+            lenguajes de programación y herramientas, Héctor ha demostrado ser excepcional en 
+            la resolución de problemas complejos y la creación de aplicaciones eficientes. 
+            Su enfoque meticuloso y su capacidad para adaptarse a nuevos desafíos le han permitido 
+            destacarse en el ámbito de la programación, siempre buscando aprender y mejorar sus habilidades. 
+            Con un fuerte compromiso por entregar proyectos de calidad y por mantenerse a la 
+            vanguardia de las últimas tendencias tecnológicas, Héctor es un profesional dedicado y 
+            apasionado por la programación.
+        </p>
+
+    </div>
+</div>
+
+<div style="margin-top: -105px">
+<div class="row justify-content-md-center text-center">
+    <div class="col col-3 bg-white" style="border-radius: 15px 0 0 15px; box-shadow: 0 5px 5px 0 gray">
+        <h3>Back-end</h3>
+        <p>
+            trabajo de desarrollo y pruebas automaticas
+        </p>
+
+        <p class="text-primary cabecera">
+            Stack:
+        </p>
+
+        <p>
+            ASP.NET Core, SQL Server
+        </p>
+
+        <p class="text-primary cabecera">
+            Experiencia: 
+        </p>
+
+        <ul>
+            <li>web APIs</li>
+            <li>ASP.NET Core MVC</li>
+            <li>Entity Framework Core</li>
+            <li>Blazor</li>
+            <li>Dapper</li>
+            <li>Queries espaciales</li>
+            <li>Principios SOLID</li>
+        </ul>
+    </div>
+
+
+        <div class="col col-3 bg-white" style="border-radius: 0 15px 15px 0; box-shadow: 0 5px 5px 0 gray">
+        <h3>Front-end</h3>
+        <p>
+            Puedo crear front-ends robustos 
+        </p>
+
+        <p class="text-primary cabecera">
+            Stack:
+        </p>
+
+        <p>
+            React, Angular y Blazor
+        </p>
+
+        <p class="text-primary cabecera">
+            Experiencia:
+        </p>
+
+        <ul>
+            <li>React Hooks</li>
+            <li>Angular Material</li>
+            <li>Blazor WASM</li>
+            <li>jQuery</li>
+            <li>Pruebas automaticas</li>
+            <li>Leaflet</li>
+            <li>Markdown</li>
+    </div>
+</div>
+</div>
